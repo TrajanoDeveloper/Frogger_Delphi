@@ -99,14 +99,12 @@ Para Desenvolvedores
 •Abra Frogger.dpr no Delphi
 •Certifique-se de que todos os arquivos estão no mesmo diretório
 
-3.
-Compilar:
+3.Compilar:
 
 •Pressione F9 ou vá em Run > Run
 •O executável será gerado na pasta do projeto
 
-4.
-Estrutura de Arquivos:
+4.Estrutura de Arquivos:
 
 🎵 Configuração de Áudio
 Arquivos de Som Inclusos
@@ -123,21 +121,25 @@ Transito_44k_mono.wav
 •Formato: WAV, 44.1kHz, Mono, otimizado
 •Quando Toca: Quando o sapo passa pela pista
 
-3.
-Bibliotecas:
+3.Bibliotecas:
 Estrutura de Desenvolvimento
 
 src/
+
 ├── frog.pas           # Lógica principal do jogo
+
 ├── frog.dfm           # Design do formulário
+
 └── Frogger.dpr        # Arquivo do projeto
 
 assets/
-├── som_sapo.wav       # Efeitos sonoros
+├── somsapo.wav       # Efeitos sonoros
+
 └── Transito_44k_mono.wav # Som de fundo
 
 docs/
 ├── README.md          # Documentação principal
+
 └── CHANGELOG.md       # Histórico de versões
 
 🐸 Obrigado por jogar Frogger! 🐸
