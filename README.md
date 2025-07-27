@@ -139,9 +139,15 @@ assets/
 docs/
 ├── README.md          # Documentação principal
 └── CHANGELOG.md       # Histórico de versões
+
 🐸 Obrigado por jogar Frogger! 🐸
+
 Desenvolvido com ❤️ em Delphi
 
+## Contato
+alexandre.trajano@gmail.com
+
+www.linkedin.com/in/alexandre-trajano-b3417a39
 
 
 
