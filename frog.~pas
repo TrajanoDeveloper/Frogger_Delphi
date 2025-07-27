@@ -1,0 +1,86 @@
+unit frog;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Buttons, ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    Label1: TLabel;
+    Image1: TImage;
+    procedure pegaposicao(Key: word);
+    procedure FormKeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+      private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.pegaposicao(Key: Word);
+begin
+     case Key of
+          VK_UP:
+          begin
+              Label1.Caption:='seta para cima';
+              Image1.top:=Image1.Top-2;
+              Application.ProcessMessages;
+              if Image1.Top <=-8 then
+              begin
+                 ShowMessage('perdeu!');
+              end;
+
+          end;
+          VK_DOWN:
+          begin
+             Label1.Caption:='seta para baixo';
+             Image1.top:=Image1.Top+2;
+             Application.ProcessMessages;
+             if Image1.Top >= 400 then
+             begin
+                 ShowMessage('perdeu!');
+             end;
+          end;
+          VK_LEFT:
+          begin
+               Label1.Caption:='seta para esquerda';
+               Image1.Left:=Image1.Left-2;
+               Application.ProcessMessages;
+               if Image1.Left <=-8 then
+              begin
+                 ShowMessage('perdeu!');
+              end;
+          end;
+          VK_RIGHT:
+          begin
+               Label1.Caption:='seta para direita';
+               Image1.Left:=Image1.Left+2;
+               Application.ProcessMessages;
+               Application.ProcessMessages;
+             if Image1.Left >= 866 then
+             begin
+                 ShowMessage('perdeu!');
+             end;
+          end;
+        end;
+end;
+
+procedure TForm1.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+   pegaposicao(key);
+end;
+
+end.
+
+
+
