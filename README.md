@@ -2,6 +2,11 @@
 
 Um jogo clássico Frogger desenvolvido em Delphi com recursos modernos de áudio, gráficos e jogabilidade aprimorada.
 
+
+🖼 Tela do Jogo
+![Tela de Login](Teladojogo.png)
+
+
 📖 Sobre o Projeto
 
 Este é uma implementação completa do clássico jogo Frogger, onde o jogador controla um sapo que deve atravessar uma estrada movimentada e um rio perigoso para chegar ao seu destino. O jogo foi desenvolvido em Delphi com foco na experiência do usuário e qualidade técnica.
